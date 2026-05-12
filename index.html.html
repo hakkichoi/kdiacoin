@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDIA COIN - Digital Innovation Asset</title>
+    <!-- 폰트: Pretendard (가독성 높은 산세리프) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        /* [색상 가이드 적용] */
+        :root {
+            --bg-color: #0B0E14;      /* Deep Charcoal */
+            --point-gold: #F3BA2F;    /* Gold/Yellow */
+            --point-grey: #474D57;    /* Steel Grey */
+            --text-main: #EAECEF;     /* Off-White */
+            --accent-green: #0ECB81;  /* Emerald Green */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Pretendard', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+        /* [Header] */
+        header {
+            position: fixed; top: 0; width: 100%; padding: 20px 50px;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(11, 14, 20, 0.8); backdrop-filter: blur(10px); z-index: 1000;
+        }
+        .logo { font-size: 24px; font-weight: 800; color: var(--point-gold); letter-spacing: -1px; }
+        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 30px; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--point-gold); }
+
+        /* [Hero Section] */
+        .hero {
+            height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; background: radial-gradient(circle at center, #1a1f2e 0%, #0b0e14 70%);
+        }
+        .hero h1 { font-size: 4rem; font-weight: 900; margin-bottom: 20px; letter-spacing: -2px; }
+        .hero p { font-size: 1.2rem; color: var(--point-grey); margin-bottom: 40px; max-width: 600px; }
+        
+        /* [CTA Buttons] */
+        .btn-group { display: flex; gap: 20px; }
+        .btn-primary { 
+            background-color: var(--point-gold); color: #000; padding: 15px 40px; 
+            border-radius: 8px; font-weight: 700; text-decoration: none; transition: 0.3s;
+        }
+        .btn-secondary { 
+            border: 1px solid var(--point-grey); color: var(--text-main); padding: 15px 40px; 
+            border-radius: 8px; font-weight: 700; text-decoration: none; transition: 0.3s;
+        }
+        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(243, 186, 47, 0.2); }
+
+        /* [Video Section] */
+        .video-section { padding: 100px 20px; text-align: center; }
+        .video-container {
+            max-width: 900px; margin: 50px auto; border-radius: 20px; overflow: hidden;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5); border: 1px solid var(--point-grey);
+        }
+        .video-container iframe { width: 100%; aspect-ratio: 16 / 9; border: none; }
+
+        /* [Footer] */
+        footer { padding: 60px 50px; background: #07090d; border-top: 1px solid #1a1f2e; }
+        .footer-content { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+        .disclaimer { font-size: 0.85rem; color: #666; max-width: 800px; margin-top: 20px; }
+        
+        /* 반응형 모바일 */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+            header { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">KDIA COIN</div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#video">Video</a>
+            <a href="#roadmap">Roadmap</a>
+            <a href="whitepaper.pdf" target="_blank" style="color: var(--point-gold);">Whitepaper</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Digital Innovation<br><span style="color: var(--point-gold);">Asset Evolution</span></h1>
+        <p>신뢰와 기술을 바탕으로 한 차세대 디지털 자산 생태계, KDIA 코인이 블록체인의 새로운 기준을 제시합니다.</p>
+        <div class="btn-group">
+            <a href="whitepaper.pdf" class="btn-primary" download>백서 다운로드 (PDF)</a>
+            <a href="#video" class="btn-secondary">소개 영상 보기</a>
+        </div>
+    </section>
+
+    <section id="video" class="video-section">
+        <h2>Eco-system Preview</h2>
+        <p style="color: var(--point-grey);">유튜브를 통해 KDIA의 비전을 확인하세요.</p>
+        <div class="video-container">
+            <!-- 유튜브 링크를 여기에 임베드하세요 -->
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="KDIA Project Video" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="logo" style="margin-bottom: 10px;">KDIA</div>
+                <p>© 2026 KDIA Foundation. All rights reserved.</p>
+            </div>
+            <div class="nav-links" style="display: block;">
+                <p>Community</p>
+                <a href="#" style="margin: 0 10px 0 0;">Twitter</a>
+                <a href="#" style="margin: 0 10px 0 0;">Telegram</a>
+                <a href="#" style="margin: 0 10px 0 0;">Youtube</a>
+            </div>
+        </div>
+        <p class="disclaimer">
+            면책 조항: 본 사이트에서 제공하는 모든 정보는 투자 권유를 목적으로 하지 않으며, 가상자산의 가치는 시장 상황에 따라 급변할 수 있습니다. 
+            모든 투자의 책임은 투자자 본인에게 있음을 알려드립니다.
+        </p>
+    </footer>
+
+</body>
+</html>
